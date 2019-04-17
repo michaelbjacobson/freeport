@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+SCRIPT=$(cat <<-SCRIPTEND
+#!/usr/bin/env bash
+
+PORT=\$1
+
+if [ -z \$PORT ]
+then
+  echo "Please specity a port number"
+else
+  PID=\$(lsof -ti :\$PORT)
+
+  if [ -z "\$PID" ]
+  then
+          echo "Port \$PORT is already free"
+  else
+          kill \$PID
+          echo "Port \$PORT is now free"
+  fi
+fi
+
+SCRIPTEND
+)
+
+sudo touch /usr/local/bin/freeport
+sudo echo "$SCRIPT" > /usr/local/bin/freeport
+sudo chmod 755 /usr/local/bin/freeport
