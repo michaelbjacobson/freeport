@@ -25,13 +25,20 @@ Traceback (most recent call last):
 
 ### Damn. I closed my terminal window before shutting down my Sinatra server. Now my port is blocked.
 
+<br>
+
 ---
+
+<br>
 
 ### Annoying, huh? Well here's how to fix the problem:
 
-##### Option 1: Restart your computer. This will kill all running processes, thus freeing up that port.
-`$ sudo reboot`
+##### Option 1: Restart your computer. This will kill all running processes, thus freeing up that blocked port.
+```
+$ sudo reboot
+```
 
+<br>
 
 ##### Option 2: Identify the ID of the process using the port, then manually kill that process.
 ```
@@ -41,4 +48,17 @@ $ lsof -i :4567
 $ kill 9154
 ```
 
-##### Option 3: 
+<br>
+
+##### Option 3: Use freeport™ (not actually trademarked) to do all that heavy lifting for you! Simply install by running the following at your command line...
+```
+$ curl -sSL https://freeport.herokuapp.com | sudo sh
+```
+
+##### ...then all you have to do is run freeport, with the port that's blocked...
+```
+$ freeport 4567
+  Port 4567 is now free
+```
+
+##### ... and voila!
