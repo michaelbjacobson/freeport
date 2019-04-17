@@ -4,5 +4,6 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem 'thin'
+gem 'rack-ssl-enforcer'
 gem 'sinatra'
+gem 'thin'
