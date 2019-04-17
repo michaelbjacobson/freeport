@@ -33,6 +33,8 @@ Traceback (most recent call last):
 
 ### Annoying, huh? Well here's how to fix the problem:
 
+<br>
+
 ##### Option 1: Restart your computer. This will kill all running processes, thus freeing up that blocked port.
 ```
 $ sudo reboot
@@ -50,7 +52,7 @@ $ kill 9154
 
 <br>
 
-##### Option 3: Use freeport™ (not actually trademarked) to do all that heavy lifting for you! Simply install by running the following at your command line...
+##### Option 3: Use freeport™ to do all that heavy lifting for you! Simply install by running the following at your command line...
 ```
 $ curl -sSL https://freeport.herokuapp.com | sudo sh
 ```
@@ -62,3 +64,7 @@ $ freeport 4567
 ```
 
 ##### ... and voila!
+
+<br><br>
+
+Please note, freeport is not actually trademarked...
