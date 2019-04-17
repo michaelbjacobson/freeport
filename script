@@ -23,6 +23,6 @@ fi
 SCRIPTEND
 )
 
-sudo touch /usr/local/bin/freeport
-sudo echo "$SCRIPT" > /usr/local/bin/freeport
-sudo chmod 755 /usr/local/bin/freeport
+touch /usr/local/bin/freeport
+echo "$SCRIPT" > /usr/local/bin/freeport
+chmod 755 /usr/local/bin/freeport
