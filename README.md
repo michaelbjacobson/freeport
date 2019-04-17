@@ -1,4 +1,4 @@
-### Hi friends, does this ever happen to you?
+### Hi friend, does this ever happen to you?
 
 ```ruby
 == Sinatra (v2.0.5) has taken the stage on 4567 for development with backup from Thin
