@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'thin'
+require 'rack/ssl-enforcer'
 
 class App < Sinatra::Base
 
