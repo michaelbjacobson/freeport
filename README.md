@@ -1,4 +1,4 @@
-###Hi friends, does this ever happen to you?
+### Hi friends, does this ever happen to you?
 
 ```ruby
 == Sinatra (v2.0.5) has taken the stage on 4567 for development with backup from Thin
@@ -23,17 +23,17 @@ Traceback (most recent call last):
 /Users/michaeljacobson/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:531:in `start_tcp_server': no acceptor (port is in use or requires root privileges) (RuntimeError)
 ```
 
-###Damn. I closed my terminal window before shutting down my Sinatra server. Now my port is blocked.
+### Damn. I closed my terminal window before shutting down my Sinatra server. Now my port is blocked.
 
 ---
 
-###Annoying, huh? Well here's how to fix the problem:
+### Annoying, huh? Well here's how to fix the problem:
 
-#####Option 1: Restart your computer. This will kill all running processes, thus freeing up that port.
+##### Option 1: Restart your computer. This will kill all running processes, thus freeing up that port.
 `$ sudo reboot`
 
 
-#####Option 2: Identify the ID of the process using the port, then manually kill that process.
+##### Option 2: Identify the ID of the process using the port, then manually kill that process.
 ```
 $ lsof -i :4567
   COMMAND  PID            USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
@@ -41,4 +41,4 @@ $ lsof -i :4567
 $ kill 9154
 ```
 
-#####Option 3: 
+##### Option 3: 
