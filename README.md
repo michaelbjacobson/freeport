@@ -52,7 +52,7 @@ $ kill 9154
 
 <br>
 
-##### Option 3: Use freeport™ to do all that heavy lifting for you! Simply install by running the following at your command line...
+##### Option 3: Use freeport™ to do all that heavy lifting for you! Simply install by running the following in your terminal...
 ```
 $ curl -sSL https://freeport.herokuapp.com | sudo sh
 ```
@@ -65,6 +65,6 @@ $ freeport 4567
 
 ##### ... and voila!
 
-<br><br>
+<br><br><br>
 
 Please note, freeport is not actually trademarked...
