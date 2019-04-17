@@ -23,7 +23,7 @@ Traceback (most recent call last):
 /Users/michaeljacobson/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:531:in `start_tcp_server': no acceptor (port is in use or requires root privileges) (RuntimeError)
 ```
 
-### Damn. I closed my terminal window before shutting down my Sinatra server. Now my port is blocked.
+### Damn. I closed my terminal window before shutting down my server. Now my port is blocked.
 
 <br>
 
