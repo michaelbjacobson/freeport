@@ -20,9 +20,27 @@ else
   fi
 fi
 
+
 SCRIPTEND
 )
+
+if ! command -v lsof > /dev/null
+then
+  echo "Command lsof not available..."
+  if uname | grep "Linux" > /dev/null
+  then
+    echo "Linux distribution detected..."
+    echo "Attempting to install lsof using apt-get..."
+    sudo apt-get install lsof > /dev/null
+    if command -v lsof > /dev/null
+    then
+      echo "Successfully installed lsof"
+    fi
+  fi
+fi
 
 touch /usr/local/bin/freeport
 echo "$SCRIPT" > /usr/local/bin/freeport
 chmod 755 /usr/local/bin/freeport
+
+echo "Successfully installed freeport"
