@@ -54,7 +54,7 @@ $ kill 9154
 
 ##### Option 3: Use freeport™ to do all that heavy lifting for you! Simply install by running the following in your terminal...
 ```
-$ curl -sSL https://freeport.herokuapp.com | sudo sh
+$ curl -sSL https://freeport.herokuapp.com | bash
 ```
 
 ##### ...then all you have to do is run freeport, with the port that's blocked...
